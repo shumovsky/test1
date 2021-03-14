@@ -1,0 +1,489 @@
+html {
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 2.6rem;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 6.4rem;
+    line-height: 7.5rem;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+    margin: 0;
+    padding-top: 230px;
+}
+
+h3 {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+h5 {
+    font-style: 500;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    color: #373737;
+    margin: 0;
+}
+
+.bold__text {
+    font-weight: bold;
+}
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.button {
+    padding: 15px 47px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
+    color: #fff;
+    background: #00afdb;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+button:hover {
+    color: #333;
+    background-color: #1bffff;
+    transition-delay: 0.5s;
+    box-shadow: 0 0 10px #1bffff, 0 0 40px #1bffff, 0 0 80px #1bffff;
+}
+
+button:hover span:nth-child(1) {
+    left: 100%;
+}
+
+button:hover span:nth-child(2) {
+    top: 100%;
+}
+
+button:hover span:nth-child(3) {
+    right: 100%;
+}
+
+button:hover span:nth-child(4) {
+    bottom: 100%;
+}
+
+button span {
+    display: block;
+    position: absolute;
+    transition: 0.6s ease;
+}
+
+button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #1bffff);
+    transition-delay: 0.25s;
+}
+
+button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #1bffff);
+}
+
+button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg, transparent, #1bffff);
+    transition-delay: 0.25s;
+}
+
+button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(0, transparent, #1bffff);
+}
+.header__navigation {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-51%);
+    top: 30px;
+    width: 581px;
+}
+
+.header__navigation ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    height: 50px;
+}
+
+.header__navigation ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__navigation ul a:hover {
+    border-bottom: solid 1px #fff;
+}
+
+.logo {
+    margin: 0 15px;
+}
+
+.active {
+    border-bottom: solid 1px #fff;
+}
+
+.you-life {
+    background: url(./assets/img/header_bg.jpg);
+    background-position: center;
+}
+
+.you-life__text {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #fff;
+    text-align: center;
+    width: 506px;
+    margin: 0 auto;
+    padding-top: 21px;
+}
+
+.you-life__button {
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+
+.you-life__social-list {
+    padding: 183px 0 80px 0;
+}
+
+.social-list {
+    display: flex;
+    padding-top: 183px;
+    width: 170px;
+    justify-content: space-between;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+.social-list li a img:hover {
+    background: #00afdb;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.represent {
+    margin-top: 120px;
+    margin-bottom: 132px;
+}
+
+.represent__wrapper {
+    display: flex;
+    width: 1062px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.represent__content {
+    margin-top: 174px;
+    width: 407px;
+}
+
+.represent__title {
+    width: 390px;
+}
+
+.represent__text {
+    padding-top: 6px;
+    line-height: 2rem;
+}
+.represent__button {
+    position: relative;
+    margin-top: 16px;
+}
+
+.community {
+    padding-top: 120px;
+    background: #f5f6f7;
+    position: relative;
+}
+
+.community__wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.slider__arrow {
+    display: flex;
+    position: absolute;
+    top: 59px;
+    right: 22%;
+    width: 82px;
+    justify-content: space-between;
+}
+
+.slider__arrow img {
+    cursor: pointer;
+}
+
+.slider-count {
+    display: flex;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #373737;
+    width: 37px;
+    justify-content: space-between;
+}
+
+.community__title {
+    padding-top: 12px;
+}
+
+.community__text {
+    width: 298px;
+    margin: 0 auto;
+    color: #4e4e4e;
+    padding: 10px 0;
+    line-height: 2rem;
+}
+
+.community__slider {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 130px;
+}
+.community__slider img {
+    padding-left: 30px;
+}
+
+.community__slider img:first-child {
+    padding-left: -30px;
+}
+
+.community__content {
+    text-align: center;
+    margin-right: 108px;
+}
+.community__picture {
+    padding-top: 34px;
+}
+
+.implement {
+    padding-top: 120px;
+}
+
+.implement__wrapper {
+    width: 1062px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    padding-bottom: 134px;
+}
+
+.implement__picture {
+}
+
+.implement__content {
+    width: 407px;
+    margin: 0 auto;
+    padding-left: 30px;
+    margin-bottom: 6px;
+}
+
+.implement__text {
+    padding-top: 8px;
+}
+
+.implement {
+    line-height: 2rem;
+}
+
+.implement__button {
+    position: relative;
+    margin-top: 15px;
+}
+
+.subscribe {
+    background: url(./assets/img/form_bg.jpg);
+    padding-bottom: 277px;
+    background-position: center;
+}
+
+.subscribe__title {
+    padding-top: 217px;
+    text-align: center;
+    color: #fff;
+}
+
+.subscribe form {
+    text-align: center;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe form input {
+    width: 340px;
+    padding: 14px 0 12px 24px;
+    border: none;
+    background: #ffffff;
+    border-radius: 0px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #373737;
+    box-sizing: border-box;
+}
+
+.subscribe form input object {
+    padding-top: 3px;
+}
+
+input:focus {
+    outline: solid 2px #00afdb;
+    outline-offset: -2px;
+}
+
+.submit__button {
+    background: #00afdb;
+    border-radius: 0px;
+    position: relative;
+    width: 66px;
+    height: 46px;
+    padding: 0;
+}
+
+.download {
+    padding-top: 118px;
+    text-align: center;
+    background: #f5f6f7;
+}
+
+.download__wrapper {
+    width: 483px;
+    margin: 0 auto;
+}
+
+.download__text {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #4e4e4e;
+    padding-top: 7px;
+}
+
+.download__app {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    padding-bottom: 180px;
+    width: 452px;
+    margin: 0 auto;
+}
+
+.button_apple,
+.button__android {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background: #00afdb;
+    position: relative;
+    overflow: hidden;
+}
+
+.button__title-apple {
+    color: #fff;
+    text-transform: uppercase;
+    width: 130px;
+    box-sizing: border-box;
+    padding: 4px 0 0 0;
+}
+
+.button__title-android {
+    color: #fff;
+    text-transform: uppercase;
+    width: 128px;
+    box-sizing: border-box;
+    padding: 4px 0 0 0;
+}
+
+.button__img-apple {
+    padding: 13px 21px 13px 22px;
+    background: #009cc2;
+}
+
+.button__img-android {
+    padding: 11px 20px 12px 21px;
+    background: #009cc2;
+}
+
+.footer {
+    margin: 0 auto;
+    background: #000;
+}
+
+.footer__wrapper {
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 58px;
+    padding-bottom: 72px;
+    align-items: center;
+}
+
+.footer__navigation-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 235px;
+    padding: 0;
+}
+
+.footer__navigation-list li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer__navigation-list li a:hover {
+    border-bottom: solid 1px #fff;
+}
+
+.footer__author {
+    color: #818181;
+    width: 235px;
+    text-align: right;
+}
+
+.footer__navigation-list li::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 8px;
+    background: #fff;
+}
